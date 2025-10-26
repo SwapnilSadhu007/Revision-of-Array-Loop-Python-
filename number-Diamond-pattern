@@ -1,0 +1,22 @@
+def print_number_diamond():
+    lines = []
+    for i in range(5, 0, -1):
+        left = [str(j) for j in range(5, i - 1, -1)]
+        right = [str(j) for j in range(i + 1, 6)]
+        line = ' '.join(left + right)
+        lines.append(line)
+
+    for i in range(2, 6):
+        left = [str(j) for j in range(5, i - 1, -1)]
+        right = [str(j) for j in range(i + 1, 6)]
+        line = ' '.join(left + right)
+        lines.append(line)
+
+
+    max_width = len(lines[4])  
+
+    
+    for line in lines:
+        print(line.center(max_width))
+
+print_number_diamond()
