@@ -1,0 +1,13 @@
+def delete_by_index(arr, index):
+    if 0 <= index < len(arr):
+        del arr[index]
+    return arr
+
+def delete_by_value(arr, value):
+    if value in arr:
+        arr.remove(value)
+    return arr
+
+array = [10, 20, 30, 40, 50]
+print("Updated array:",delete_by_index(array.copy(), 2))
+print("Updated array:",delete_by_value(array.copy(), 40))
