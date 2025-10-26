@@ -1,0 +1,10 @@
+def rotate_left(arr, k):
+    return arr[k:] + arr[:k]
+
+def rotate_right(arr, k):
+    return arr[-k:] + arr[:-k]
+
+array = [1, 2, 3, 4, 5]
+k = 2
+print(rotate_left(array, k))
+print(rotate_right(array, k))
