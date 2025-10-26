@@ -1,0 +1,8 @@
+def insert_element(arr, element, position):
+    arr.insert(position, element)
+    return arr
+
+array = [10, 20, 30, 40, 50]
+new_element = 25
+insert_position = 2
+print(insert_element(array, new_element, insert_position))
